@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73EB9657ACE7F8397587A962 /* libPods-NetWorking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BF3995AD5EE492422ACEB9 /* libPods-NetWorking.a */; };
 		EDA37D62209011BD0095192F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA37D61209011BD0095192F /* AppDelegate.m */; };
 		EDA37D65209011BD0095192F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA37D64209011BD0095192F /* ViewController.m */; };
 		EDA37D68209011BD0095192F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA37D66209011BD0095192F /* Main.storyboard */; };
 		EDA37D6A209011BD0095192F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA37D69209011BD0095192F /* Assets.xcassets */; };
 		EDA37D6D209011BD0095192F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA37D6B209011BD0095192F /* LaunchScreen.storyboard */; };
 		EDA37D70209011BD0095192F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA37D6F209011BD0095192F /* main.m */; };
+		EDA37D79209012220095192F /* HttpNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA37D78209012220095192F /* HttpNetworkManager.m */; };
+		EDA37D7D209013A80095192F /* ProgressHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA37D7C209013A80095192F /* ProgressHUDView.m */; };
+		EDA37D8420904D840095192F /* HttpManagerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA37D8320904D840095192F /* HttpManagerRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		151A417E32201CB52200F89F /* Pods-NetWorking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetWorking.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetWorking/Pods-NetWorking.release.xcconfig"; sourceTree = "<group>"; };
+		88BF3995AD5EE492422ACEB9 /* libPods-NetWorking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetWorking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00CBE2BCED6D2F6BE305545 /* Pods-NetWorking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetWorking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetWorking/Pods-NetWorking.debug.xcconfig"; sourceTree = "<group>"; };
 		EDA37D5D209011BD0095192F /* NetWorking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetWorking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA37D60209011BD0095192F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EDA37D61209011BD0095192F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +33,14 @@
 		EDA37D6C209011BD0095192F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDA37D6E209011BD0095192F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDA37D6F209011BD0095192F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDA37D77209012220095192F /* HttpNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpNetworkManager.h; sourceTree = "<group>"; };
+		EDA37D78209012220095192F /* HttpNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpNetworkManager.m; sourceTree = "<group>"; };
+		EDA37D7B209013A80095192F /* ProgressHUDView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressHUDView.h; sourceTree = "<group>"; };
+		EDA37D7C209013A80095192F /* ProgressHUDView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressHUDView.m; sourceTree = "<group>"; };
+		EDA37D7F20902AEE0095192F /* APIName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIName.h; sourceTree = "<group>"; };
+		EDA37D8020902E150095192F /* inlineDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inlineDefine.h; sourceTree = "<group>"; };
+		EDA37D8220904D840095192F /* HttpManagerRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpManagerRequest.h; sourceTree = "<group>"; };
+		EDA37D8320904D840095192F /* HttpManagerRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpManagerRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +48,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73EB9657ACE7F8397587A962 /* libPods-NetWorking.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD82CC99B0DA08136A20E853 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88BF3995AD5EE492422ACEB9 /* libPods-NetWorking.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E802014EB5F4F28E7877A1B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D00CBE2BCED6D2F6BE305545 /* Pods-NetWorking.debug.xcconfig */,
+				151A417E32201CB52200F89F /* Pods-NetWorking.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EDA37D54209011BC0095192F = {
 			isa = PBXGroup;
 			children = (
 				EDA37D5F209011BD0095192F /* NetWorking */,
 				EDA37D5E209011BD0095192F /* Products */,
+				E802014EB5F4F28E7877A1B5 /* Pods */,
+				AD82CC99B0DA08136A20E853 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +93,7 @@
 		EDA37D5F209011BD0095192F /* NetWorking */ = {
 			isa = PBXGroup;
 			children = (
+				EDA37D76209011D00095192F /* 网络请求 */,
 				EDA37D60209011BD0095192F /* AppDelegate.h */,
 				EDA37D61209011BD0095192F /* AppDelegate.m */,
 				EDA37D63209011BD0095192F /* ViewController.h */,
@@ -71,6 +107,45 @@
 			path = NetWorking;
 			sourceTree = "<group>";
 		};
+		EDA37D76209011D00095192F /* 网络请求 */ = {
+			isa = PBXGroup;
+			children = (
+				EDA37D8520904D8E0095192F /* 请求管理类 */,
+				EDA37D8120904D540095192F /* 请求类 */,
+				EDA37D7A209013720095192F /* 提示器 */,
+				EDA37D7F20902AEE0095192F /* APIName.h */,
+				EDA37D8020902E150095192F /* inlineDefine.h */,
+			);
+			path = "网络请求";
+			sourceTree = "<group>";
+		};
+		EDA37D7A209013720095192F /* 提示器 */ = {
+			isa = PBXGroup;
+			children = (
+				EDA37D7B209013A80095192F /* ProgressHUDView.h */,
+				EDA37D7C209013A80095192F /* ProgressHUDView.m */,
+			);
+			path = "提示器";
+			sourceTree = "<group>";
+		};
+		EDA37D8120904D540095192F /* 请求类 */ = {
+			isa = PBXGroup;
+			children = (
+				EDA37D8220904D840095192F /* HttpManagerRequest.h */,
+				EDA37D8320904D840095192F /* HttpManagerRequest.m */,
+			);
+			path = "请求类";
+			sourceTree = "<group>";
+		};
+		EDA37D8520904D8E0095192F /* 请求管理类 */ = {
+			isa = PBXGroup;
+			children = (
+				EDA37D77209012220095192F /* HttpNetworkManager.h */,
+				EDA37D78209012220095192F /* HttpNetworkManager.m */,
+			);
+			path = "请求管理类";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +153,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDA37D73209011BD0095192F /* Build configuration list for PBXNativeTarget "NetWorking" */;
 			buildPhases = (
+				C6B2BF9A16F932F29A20075B /* [CP] Check Pods Manifest.lock */,
 				EDA37D59209011BD0095192F /* Sources */,
 				EDA37D5A209011BD0095192F /* Frameworks */,
 				EDA37D5B209011BD0095192F /* Resources */,
+				CF5600884C78BD13B2CAB1F8 /* [CP] Embed Pods Frameworks */,
+				1EA2F154230C32CE4BDDAE73 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,12 +215,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1EA2F154230C32CE4BDDAE73 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NetWorking/Pods-NetWorking-resources.sh",
+				"${PODS_ROOT}/ProgressHUD/ProgressHUD/ProgressHUD/ProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetWorking/Pods-NetWorking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6B2BF9A16F932F29A20075B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetWorking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF5600884C78BD13B2CAB1F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetWorking/Pods-NetWorking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EDA37D59209011BD0095192F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA37D79209012220095192F /* HttpNetworkManager.m in Sources */,
 				EDA37D65209011BD0095192F /* ViewController.m in Sources */,
+				EDA37D7D209013A80095192F /* ProgressHUDView.m in Sources */,
+				EDA37D8420904D840095192F /* HttpManagerRequest.m in Sources */,
 				EDA37D70209011BD0095192F /* main.m in Sources */,
 				EDA37D62209011BD0095192F /* AppDelegate.m in Sources */,
 			);
@@ -276,26 +411,34 @@
 		};
 		EDA37D74209011BD0095192F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00CBE2BCED6D2F6BE305545 /* Pods-NetWorking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NetWorking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nocash.NetWorking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		EDA37D75209011BD0095192F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 151A417E32201CB52200F89F /* Pods-NetWorking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NetWorking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nocash.NetWorking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
